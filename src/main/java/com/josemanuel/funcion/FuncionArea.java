@@ -7,6 +7,7 @@ import java.util.function.Function;
 public class FuncionArea implements Function<Scanner, Void>{
 
     @Override
+    //Creación de la función del area
     public Void apply(Scanner sc) {
         
         System.out.println(" P * A / 2");
@@ -19,6 +20,7 @@ public class FuncionArea implements Function<Scanner, Void>{
         String aStr = sc.next();
         BigDecimal aBD = new BigDecimal(aStr);
 
+        //Operamos y mostramos el resultado
         System.out.println("Resultado" + pBD.multiply(aBD).divide(BigDecimal.valueOf(2)).toString());
 
         return null;

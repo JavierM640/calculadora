@@ -12,6 +12,7 @@ public class Menu {
     private Map<String, ItemMenu> mapItemMenu;
     
 
+    //Creamos el constructor del menu
     public Menu(String titulo, String input, Map<String, ItemMenu> mapItemMenu, Scanner sc) {
 
         this.sc = sc;
@@ -33,6 +34,7 @@ public class Menu {
 
     }
 
+    //Creamos el bucle para la creación del menú y del submenú
     public void bucle() throws ExitMenuException {
 
         

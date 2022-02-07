@@ -15,6 +15,7 @@ import com.josemanuel.menu.Menu;
 public class SuperCalculadora 
 {
 
+    //Inicializamos el menú de la calculadora
     public SuperCalculadora() {
         sc = new Scanner(System.in);
         this.inicializaMenus();
@@ -36,6 +37,7 @@ public class SuperCalculadora
 
     }
  
+    //Creación del menú de la supercalculadora
     private void inicializaMenus() {
         
         String introOpc = "Introduzca opción:";
@@ -65,10 +67,12 @@ public class SuperCalculadora
 
     }
 
+    //Coger el menú principal
     public Menu getMenuPrincipal() {
         return menuPrincipal;
     }
 
+    //Coger el scanner
     public Scanner getSc() {
         return sc;
     }

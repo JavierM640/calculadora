@@ -7,6 +7,7 @@ import java.util.function.Function;
 public class FuncionSuma implements Function<Scanner, Void>{
 
     @Override
+    //Creamos las operaciones para la suma 
     public Void apply(Scanner sc) {
         
         System.out.println("\nOperación seleccionada suma:\n");
@@ -20,6 +21,7 @@ public class FuncionSuma implements Function<Scanner, Void>{
         String bStr = sc.next();
         BigDecimal bBD = new BigDecimal(bStr);
 
+        //Hacemos las operaciones y mostramos el resultado
         System.out.println("\nResultado: " + aBD.add(bBD).toString() + "\n");
 
         return null;
